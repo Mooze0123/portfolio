@@ -3,144 +3,179 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#f1f0eb">
+    <meta name="theme-color" content="#152b28">
     <meta name="description" content="Oskar Junebrink is an industrial design engineer focused on physical product development, CAD, prototyping, testing and refinement.">
-    <meta property="og:title" content="Oskar Junebrink — Product Development & Industrial Design">
+    <meta property="og:title" content="Oskar Junebrink — Product Development &amp; Industrial Design">
     <meta property="og:description" content="Industrial design engineer focused on developing physical products from concept through testing and refinement.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://junebrink.com/">
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <title>Oskar Junebrink — Product Development &amp; Industrial Design</title>
-    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="styles/main.css">
-    <script src="scripts/main.js" defer></script>
+    <link rel="icon" href="assets/icons/favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles/design-system.css?v=1">
+    <link rel="stylesheet" href="styles/site.css?v=16">
+    <script src="scripts/site.js?v=3" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header" data-header>
-      <a class="wordmark" href="index.html" aria-label="Oskar Junebrink, home">Junebrink</a>
+      <a class="brand" href="#top" aria-label="Oskar Junebrink, home"><span class="brand__mark" aria-hidden="true"></span><span>Junebrink</span></a>
+      <p class="header-note">Industrial design engineer</p>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" data-menu-toggle>
-        <span>Menu</span>
-        <span class="menu-toggle__mark" aria-hidden="true"></span>
+        <span>Menu</span><span class="menu-toggle__icon" aria-hidden="true"></span>
       </button>
       <nav class="site-nav" id="site-navigation" aria-label="Main navigation" data-menu>
         <a href="#work">Work</a>
         <a href="#about">About</a>
-        <a href="#cv" aria-label="CV, document coming soon">CV <span class="nav-note">Soon</span></a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
     <main id="main">
-      <section class="hero section-pad" aria-labelledby="hero-title">
-        <p class="eyebrow reveal">Industrial Design Engineer · Sweden</p>
-        <h1 id="hero-title" class="reveal">Oskar<br>Junebrink</h1>
-        <div class="hero__footer reveal">
-          <p class="hero__role">Product developer focused on physical products, CAD and prototyping.</p>
-          <p class="hero__intro">Developing ideas from early concepts through testing, iteration and refinement.</p>
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero__top page-width">
+          <p class="eyebrow" data-reveal>Portfolio / 2026</p>
+          <p class="hero__availability" data-reveal>Product · Mechanism · Motion</p>
         </div>
-        <a class="scroll-cue" href="#work" aria-label="Scroll to selected work">
-          <span>Selected work</span>
-          <span aria-hidden="true">↓</span>
-        </a>
-      </section>
-
-      <section class="work section-pad" id="work" aria-labelledby="work-title">
-        <div class="section-heading reveal">
-          <h2 id="work-title">Selected work</h2>
-          <p>Product development · CAD · Prototyping</p>
+        <div class="hero__stage page-width">
+          <div class="hero__copy">
+            <p class="hero__kicker" data-reveal>Industrial Design Engineer · Sweden</p>
+            <h1 id="hero-title" data-reveal>Oskar<br><em>Junebrink</em></h1>
+            <p class="hero__statement" data-reveal>Product developer focused on physical products, CAD and prototyping.</p>
+          </div>
+          <figure class="hero__portrait" data-reveal data-parallax>
+            <img src="assets/images/profile/oskar-junebrink.jpg" alt="Oskar Junebrink standing above a mountain coastline">
+            <figcaption>Always exploring</figcaption>
+          </figure>
+          <div class="hero__orbit" aria-hidden="true"><span></span><span></span></div>
         </div>
-
-        <article class="project project--lead reveal">
-          <div class="project-media project-media--db" role="img" aria-label="Image placeholder for the confidential Db Journey master thesis">
-            <span class="placeholder-label">Approved project imagery to come</span>
-            <span class="project-number">01</span>
-          </div>
-          <div class="project-meta">
-            <div>
-              <p class="project-type">Master thesis · 2025</p>
-              <h3>Db Journey</h3>
-            </div>
-            <p>Physical product development from user needs to a tested, manufacturable concept. Details remain confidential ahead of launch.</p>
-            <span class="project-status">Case study pending approval</span>
-          </div>
-        </article>
-
-        <div class="project-grid">
-          <article class="project reveal">
-            <div class="project-media project-media--speaker" role="img" aria-label="Image placeholder for a Scandinavian speaker project">
-              <span class="placeholder-label">Project image</span>
-              <span class="project-number">02</span>
-            </div>
-            <div class="project-meta project-meta--compact">
-              <div>
-                <p class="project-type">Product design</p>
-                <h3>Scandinavian speaker</h3>
-              </div>
-              <span class="project-status">Case study coming soon</span>
-            </div>
-          </article>
-
-          <article class="project project--offset reveal">
-            <div class="project-media project-media--cad" role="img" aria-label="Image placeholder for CAD and visualization work">
-              <span class="placeholder-label">Project image</span>
-              <span class="project-number">03</span>
-            </div>
-            <div class="project-meta project-meta--compact">
-              <div>
-                <p class="project-type">CAD · Visualization</p>
-                <h3>Form &amp; engineering studies</h3>
-              </div>
-              <span class="project-status">Work selection coming soon</span>
-            </div>
-          </article>
+        <div class="hero__base page-width">
+          <p>I’m an Industrial Design Engineer from Sweden who enjoys understanding how things work and finding practical ways to make them better.</p>
+          <p>I move between sketching, digital modeling and hands-on prototyping—developing ideas through testing, curiosity and careful refinement.</p>
+          <a class="hero__scroll" href="#work">Scroll to work <span aria-hidden="true">↓</span></a>
         </div>
       </section>
 
-      <section class="about section-pad" id="about" aria-labelledby="about-title">
-        <p class="eyebrow reveal">About</p>
+      <div class="marquee" aria-hidden="true"><div class="marquee__track"><span>Make it tangible</span><i>✳</i><span>Stay curious</span><i>✳</i><span>Keep what works</span><i>✳</i><span>Make it tangible</span><i>✳</i><span>Stay curious</span><i>✳</i><span>Keep what works</span><i>✳</i></div></div>
+
+      <section class="work page-width" id="work" aria-labelledby="work-title">
+        <div class="project-workspace">
+          <aside class="project-index" aria-label="Project index">
+            <div class="project-index__top">
+              <p class="eyebrow">01 / Selected work</p>
+              <h2 id="work-title">Projects</h2>
+              <p class="project-index__intro">Seven projects, from first sketch to final test.</p>
+            </div>
+            <nav class="project-index__nav" aria-label="Projects">
+              <a href="#project-stone-golem" data-project-link="project-stone-golem" aria-current="true"><span>Story of the Stone Golem</span><b aria-hidden="true">↗</b></a>
+              <a href="#project-rubber-band-toy" data-project-link="project-rubber-band-toy"><span>Rubber Band Toy</span><b aria-hidden="true">↗</b></a>
+              <a href="#project-moto-guzzi" data-project-link="project-moto-guzzi"><span>Moto Guzzi Robot Vacuum</span><b aria-hidden="true">↗</b></a>
+              <a href="#project-speaker" data-project-link="project-speaker"><span>Brand-Inspired Speaker</span><b aria-hidden="true">↗</b></a>
+              <a href="#project-chess" data-project-link="project-chess"><span>Chess Pieces</span><b aria-hidden="true">↗</b></a>
+              <a href="#project-docbot" data-project-link="project-docbot"><span>DocBot</span><b aria-hidden="true">↗</b></a>
+              <a href="#project-db-journey" data-project-link="project-db-journey"><span>Db Journey</span><b aria-hidden="true">↗</b></a>
+            </nav>
+            <p class="project-index__foot">Product development · CAD · Prototyping · Visualization</p>
+          </aside>
+
+          <div class="project-feed">
+            <article class="project-card project-card--golem" id="project-stone-golem" data-project-card data-reveal>
+              <a class="project-card__media-link" href="projects/stone-golem/" aria-label="Open Story of the Stone Golem case study">
+                <figure class="project-card__media" data-parallax><img src="assets/images/stone-golem/forest-hero.png" alt="Stone golem walking through a dense moonlit forest beside a glowing spirit" loading="lazy"></figure>
+              </a>
+              <div class="project-card__body">
+                <div class="project-card__meta"><span>01</span><span>Product visualization · 2024 · 3 months</span></div>
+                <div class="project-card__body-main"><h3>Story of the <em>Stone Golem</em></h3><div><p class="project-card__description">A fairytale toy developed from magnetic stones into a textured, rigged and animated Blender world.</p><ul class="project-card__tags" aria-label="Skills used"><li>Blender</li><li>3D modeling</li><li>Texturing</li><li>Rigging</li><li>Animation</li></ul></div></div>
+                <a class="project-card__link" href="projects/stone-golem/">Open the story <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+
+            <article class="project-card project-card--rubber" id="project-rubber-band-toy" data-project-card data-reveal>
+              <a class="project-card__media-link" href="projects/rubber-band-toy/" aria-label="Open Rubber Band Toy case study">
+                <figure class="project-card__media" data-parallax><img src="assets/images/rubber-band-toy/cover.jpg" alt="Finished wooden Rubber Band Toy with launchers, targets and wooden balls" loading="lazy"></figure>
+              </a>
+              <div class="project-card__body">
+                <div class="project-card__meta"><span>02</span><span>Individual university project · 8 weeks</span></div>
+                <div class="project-card__body-main"><h3>Rubber Band <em>Toy</em></h3><div><p class="project-card__description">A tactile two-player toy built only from wood and rubber bands.</p><ul class="project-card__tags" aria-label="Skills used"><li>Product design</li><li>Woodworking</li><li>Prototyping</li><li>Fabrication</li></ul></div></div>
+                <a class="project-card__link" href="projects/rubber-band-toy/">Open the story <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+
+            <article class="project-card project-card--moto" id="project-moto-guzzi" data-project-card data-reveal>
+              <a class="project-card__media-link" href="projects/moto-guzzi/" aria-label="Open Moto Guzzi Robot Vacuum case study">
+                <figure class="project-card__media" data-parallax><img src="assets/images/moto-guzzi/cover.jpg" alt="Completed Moto Guzzi-inspired robot vacuum cleaner prototype on a wooden floor" loading="lazy"></figure>
+              </a>
+              <div class="project-card__body">
+                <div class="project-card__meta"><span>03</span><span>University team project · 2023 · 3 months</span></div>
+                <div class="project-card__body-main"><h3>Moto Guzzi <em>Robot Vacuum</em></h3><div><p class="project-card__description">Translating motorcycle heritage into a domestic product and prototype.</p><ul class="project-card__tags" aria-label="Skills used"><li>Concept development</li><li>CAD</li><li>Prototyping</li><li>Brand language</li></ul></div></div>
+                <a class="project-card__link" href="projects/moto-guzzi/">Open the story <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+
+            <article class="project-card project-card--speaker" id="project-speaker" data-project-card data-reveal>
+              <a class="project-card__media-link" href="projects/brand-inspired-speaker/" aria-label="Open Brand-Inspired Speaker case study">
+                <figure class="project-card__media" data-parallax><img src="assets/images/speaker/hero.png" alt="Three-quarter rendering of the brand-inspired wooden soundbar" loading="lazy"></figure>
+              </a>
+              <div class="project-card__body">
+                <div class="project-card__meta"><span>04</span><span>Product design · 2 weeks</span></div>
+                <div class="project-card__body-main"><h3>Brand-Inspired <em>Speaker</em></h3><div><p class="project-card__description">Scandinavian form language explored through CAD, material and rendering.</p><ul class="project-card__tags" aria-label="Skills used"><li>CAD</li><li>Form development</li><li>CMF</li><li>Rendering</li></ul></div></div>
+                <a class="project-card__link" href="projects/brand-inspired-speaker/">Open the story <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+
+            <article class="project-card project-card--chess" id="project-chess" data-project-card data-reveal>
+              <a class="project-card__media-link" href="projects/chess-pieces/" aria-label="Open Chess Pieces case study">
+                <figure class="project-card__media" data-parallax><img src="assets/images/chess-pieces/chess-close.jpg" alt="Unconventional chess pieces rendered in an interior" loading="lazy"></figure>
+              </a>
+              <div class="project-card__body">
+                <div class="project-card__meta"><span>05</span><span>Form study · 2 weeks</span></div>
+                <div class="project-card__body-main"><h3>Chess <em>Pieces</em></h3><div><p class="project-card__description">Movement rules translated into a coherent family of physical forms.</p><ul class="project-card__tags" aria-label="Skills used"><li>Form study</li><li>CAD</li><li>Design system</li><li>Rendering</li></ul></div></div>
+                <a class="project-card__link" href="projects/chess-pieces/">Open the story <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+
+            <article class="project-card project-card--docbot" id="project-docbot" data-project-card data-reveal>
+              <a class="project-card__media-link" href="projects/docbot/" aria-label="Open DocBot case study">
+                <figure class="project-card__media" data-parallax><img src="assets/docbot/docbot-home.png" alt="DocBot healthcare app shown on a phone" loading="lazy"></figure>
+              </a>
+              <div class="project-card__body">
+                <div class="project-card__meta"><span>06</span><span>Interaction design · 2023 · 8 weeks</span></div>
+                <div class="project-card__body-main"><h3>Doc<em>Bot</em></h3><div><p class="project-card__description">A clearer digital route through Swedish healthcare services.</p><ul class="project-card__tags" aria-label="Skills used"><li>UX</li><li>UI design</li><li>Figma</li><li>Prototyping</li></ul></div></div>
+                <a class="project-card__link" href="projects/docbot/">Open the story <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+
+            <article class="project-card project-card--pending" id="project-db-journey" data-project-card data-reveal>
+              <div class="project-card__media-link" aria-label="Db Journey project status">
+                <div class="project-card__placeholder"><span>Confidential until launch</span></div>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__meta"><span>07</span><span>Master thesis · 2025 · 6 months</span></div>
+                <div class="project-card__body-main"><h3>Db <em>Journey</em></h3><div><p class="project-card__description">Physical product development from user needs to a tested, manufacturable concept.</p><ul class="project-card__tags" aria-label="Skills used"><li>User research</li><li>Product development</li><li>Testing</li><li>Manufacturing</li></ul></div></div>
+                <a class="project-card__link" href="projects/db-journey/">View project status <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="about page-width" id="about" aria-labelledby="about-title">
+        <div class="section-intro" data-reveal><p class="eyebrow">02 / About</p><h2 id="about-title">I design by making,<br><em>testing and refining.</em></h2></div>
         <div class="about__grid">
-          <h2 id="about-title" class="reveal">I design by making, testing and refining.</h2>
-          <div class="about__copy reveal">
-            <p>I’m a newly graduated Industrial Design Engineer from Luleå University of Technology, specialized in product development and product design.</p>
-            <p>I enjoy understanding how things work—taking them apart, fixing them and turning ideas into practical, considered products. My approach combines CAD, prototyping, visualization and hands-on problem solving.</p>
-            <p>Running my own e-commerce company also taught me to work independently, collaborate with suppliers, understand customers and take responsibility from first decision to final delivery.</p>
-          </div>
+          <div class="about__copy" data-reveal><p>I’m a newly graduated Industrial Design Engineer from Luleå University of Technology, specialized in product development and product design.</p><p>I enjoy understanding how things work—taking them apart, fixing them and turning ideas into practical, considered products. My approach combines CAD, prototyping, visualization and hands-on problem solving.</p><p>Running my own e-commerce company also taught me to work independently, collaborate with suppliers, understand customers and take responsibility from first decision to final delivery.</p><p class="about__aside">I’m happiest in the space between a rough first idea and the moment a prototype finally behaves the way it should.</p></div>
+          <figure class="about__portrait" data-reveal><img src="assets/images/profile/oskar-profile.png" alt="Portrait of Oskar Junebrink, Industrial Design Engineer" loading="lazy"><figcaption>Oskar Junebrink · Industrial Design Engineer</figcaption></figure>
         </div>
-
-        <div class="capabilities reveal" aria-label="Areas of focus">
-          <span>Product development</span>
-          <span>Mechanical design</span>
-          <span>CAD</span>
-          <span>Prototyping</span>
-          <span>Testing &amp; iteration</span>
-          <span>Visualization</span>
-        </div>
+        <div class="capabilities" data-reveal><span>Product development</span><span>Mechanical design</span><span>CAD</span><span>Prototyping</span><span>Testing &amp; iteration</span><span>Visualization</span></div>
       </section>
 
-      <section class="cv-band section-pad" id="cv" aria-labelledby="cv-title">
-        <div class="reveal">
-          <p class="eyebrow">Curriculum vitae</p>
-          <h2 id="cv-title">CV available soon.</h2>
-        </div>
-        <p class="cv-band__note reveal">A download link will be added here when the PDF is provided.</p>
-      </section>
-
-      <section class="contact section-pad" id="contact" aria-labelledby="contact-title">
-        <p class="eyebrow reveal">Contact</p>
-        <h2 id="contact-title" class="reveal">Have an opportunity<br>worth discussing?</h2>
-        <div class="contact__footer reveal">
-          <p>Interested in working together or discussing a role? Get in touch.</p>
-          <p class="contact-placeholder">Email and LinkedIn links to be added</p>
-        </div>
+      <section class="contact page-width" id="contact" aria-labelledby="contact-title">
+        <div class="contact__top" data-reveal><p class="eyebrow">03 / Contact</p><span>Let’s make something useful.</span></div>
+        <h2 id="contact-title" data-reveal>Have an opportunity<br><em>worth discussing?</em></h2>
+        <div class="contact__body" data-reveal><p>Interested in working together or discussing a role? Get in touch.</p><address><a href="mailto:oskarjunebrink@gmail.com"><span>Email</span>oskarjunebrink@gmail.com ↗</a><a href="tel:+46736205242"><span>Phone</span>+46 73 620 52 42 ↗</a><a href="https://www.instagram.com/oskar.junebrink/" target="_blank" rel="noopener noreferrer"><span>Instagram</span>@oskar.junebrink ↗</a><a href="https://www.linkedin.com/in/oskar-junebrink" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span>Oskar Junebrink ↗</a></address></div>
       </section>
     </main>
 
-    <footer class="footer section-pad">
-      <p>Oskar Junebrink</p>
-      <p>Industrial Design Engineer</p>
-      <a href="#main">Back to top ↑</a>
-    </footer>
+    <footer class="site-footer page-width"><span>© 2026 Oskar Junebrink</span><span>Made in Sweden · Built with curiosity</span><a href="#top">Back to top ↑</a></footer>
   </body>
 </html>

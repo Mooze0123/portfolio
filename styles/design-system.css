@@ -1,0 +1,40 @@
+/*
+  Junebrink design system
+  -----------------------
+  Shared tokens for every page. Keep project-specific art direction in the
+  page stylesheet, but always build on these values so new case studies feel
+  like part of the same portfolio.
+*/
+:root {
+  /* Colour roles */
+  --ds-color-paper: #f6f2e8;
+  --ds-color-ink: #17221f;
+  --ds-color-muted: #68746d;
+  --ds-color-line: #cbd3c9;
+  --ds-color-accent: #f26043;
+  --ds-color-dark: #172d2a;
+  --ds-color-dark-line: #415b53;
+
+  /* Type roles */
+  --ds-font-sans: "Helvetica Neue", "Neue Haas Grotesk Text Pro", Helvetica, Arial, sans-serif;
+  --ds-type-label: .68rem;
+  --ds-type-body: 1rem;
+  --ds-type-lead: clamp(1.15rem, 2vw, 1.8rem);
+  --ds-type-title: clamp(1.8rem, 3.3vw, 3.5rem);
+  --ds-letter-label: .1em;
+  --ds-letter-display: -.05em;
+
+  /* Layout roles */
+  --ds-max-width: 1600px;
+  --ds-page-pad: clamp(1.25rem, 4vw, 4.5rem);
+  --ds-section-gap: clamp(6rem, 12vw, 11rem);
+  --ds-radius-pill: 999px;
+  --ds-radius-frame: 2px;
+  --ds-frame-pad: clamp(.65rem, 1.5vw, 1.25rem);
+
+  /* Motion roles */
+  --ds-ease-standard: cubic-bezier(.2, .75, .25, 1);
+  --ds-duration-fast: .25s;
+  --ds-duration-standard: .55s;
+  --ds-duration-slow: .8s;
+}
