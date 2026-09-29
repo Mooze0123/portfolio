@@ -40,6 +40,8 @@ figure, p, h1, h2, h3 { margin: 0; }
 .menu-toggle { display: none; border: 0; background: none; font-size: .68rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
 
 .hero { position: relative; min-height: 100svh; padding-top: 7rem; padding-bottom: clamp(2rem, 4vw, 4rem); background: var(--dark); color: var(--paper); overflow: hidden; }
+.construction-banner { position: absolute; z-index: 4; top: 4.5rem; right: 0; left: 0; display: flex; justify-content: space-between; gap: 1.5rem; padding: .55rem var(--pad); background: var(--accent); color: var(--dark); font-size: .62rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.construction-banner span:last-child { opacity: .7; }
 .hero__top, .hero__base { position: relative; z-index: 2; display: flex; justify-content: space-between; gap: 2rem; }
 .hero__top { align-items: start; }
 .eyebrow, .hero__availability, .hero__kicker { font-size: .67rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
@@ -70,7 +72,7 @@ figure, p, h1, h2, h3 { margin: 0; }
 .marquee span { font-size: clamp(1.3rem, 2.8vw, 2.8rem); font-weight: 600; letter-spacing: -.06em; white-space: nowrap; }
 .marquee i { font-size: 1.1rem; font-style: normal; }
 
-.work { padding-top: clamp(7rem, 13vw, 13rem); padding-bottom: clamp(7rem, 13vw, 13rem); }
+.work { padding-top: clamp(3.5rem, 6.5vw, 6.5rem); padding-bottom: clamp(3.5rem, 6.5vw, 6.5rem); }
 .section-intro { display: grid; grid-template-columns: 1fr 1.25fr .8fr; gap: clamp(2rem, 6vw, 8rem); align-items: end; margin-bottom: clamp(4rem, 8vw, 8rem); }
 .work .section-intro { grid-template-columns: 1fr; }
 .section-intro .eyebrow { align-self: start; color: var(--accent); }
@@ -164,7 +166,7 @@ figure, p, h1, h2, h3 { margin: 0; }
 .project-feed .project-card__link:hover, .project-feed .project-card__link:focus-visible { color: var(--project-accent); }
 .project-feed .project-card__placeholder { display: grid; place-items: center; width: 100%; min-height: 28rem; padding: 3rem; border: 1px dashed var(--project-accent); border-radius: .85rem; background: repeating-linear-gradient(135deg, transparent 0 1.2rem, rgba(245, 241, 232, .04) 1.2rem 1.3rem); color: rgba(245, 241, 232, .58); font-size: clamp(2.5rem, 5vw, 5rem); }
 
-.about { padding-top: clamp(7rem, 13vw, 13rem); padding-bottom: clamp(7rem, 13vw, 13rem); background: var(--dark); color: var(--paper); }
+.about { padding-top: 0; padding-bottom: clamp(3.5rem, 6.5vw, 6.5rem); background: var(--dark); color: var(--paper); }
 .about.page-width, .contact.page-width { width: 100%; margin-inline: 0; }
 .about > *, .contact > * { width: min(var(--max), calc(100% - (var(--pad) * 2))); margin-inline: auto; }
 .about .section-intro { grid-template-columns: 1fr; }
@@ -184,7 +186,7 @@ figure, p, h1, h2, h3 { margin: 0; }
 .capabilities { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: clamp(4rem, 8vw, 8rem); padding-top: 1.2rem; border-top: 1px solid var(--dark-soft); }
 .capabilities span { padding: .55rem .75rem; border: 1px solid var(--dark-soft); border-radius: 999px; color: rgba(245, 241, 232, .8); font-size: .68rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
 
-.contact { padding-top: clamp(6rem, 11vw, 11rem); padding-bottom: clamp(6rem, 11vw, 11rem); background: var(--accent); color: var(--dark); }
+.contact { padding-top: clamp(3rem, 5.5vw, 5.5rem); padding-bottom: clamp(6rem, 11vw, 11rem); background: var(--accent); color: var(--dark); }
 .contact__top, .contact__body { display: flex; justify-content: space-between; gap: 2rem; }
 .contact__top { align-items: start; font-size: .68rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
 .contact__top .eyebrow { color: var(--dark); }
@@ -221,9 +223,10 @@ figure, p, h1, h2, h3 { margin: 0; }
   .site-nav a { padding: .8rem 0; border-bottom: 1px solid var(--line); font-size: .8rem; }
   .site-nav a::after { display: none; }
   .hero { padding-top: 6rem; }
+  .construction-banner { top: 4rem; padding-block: .5rem; font-size: .55rem; }
   .hero__top { display: block; }
   .hero__availability { margin-top: .8rem; }
-  .hero__stage { grid-template-columns: 1fr; min-height: auto; gap: 1.5rem; padding-top: 7rem; }
+  .hero__stage { grid-template-columns: 1fr; min-height: auto; gap: 1.5rem; padding-top: 3.5rem; }
   .hero__copy { padding-bottom: 0; }
   .hero h1 { font-size: clamp(4.6rem, 21vw, 7.5rem); }
   .hero__portrait { justify-self: end; width: min(66vw, 18rem); margin: 1rem 1rem 2rem 0; }
