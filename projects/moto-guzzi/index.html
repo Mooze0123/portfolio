@@ -1,94 +1,134 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#172d2a">
-    <meta name="description" content="A workbook-led case study of the Moto Guzzi VC 6 robot vacuum cleaner, from brand analysis and ideation to clay, CAD, manufacturing and final prototype.">
-    <meta property="og:title" content="Moto Guzzi VC 6 — Oskar Junebrink">
-    <meta property="og:description" content="Translating Moto Guzzi's racing heritage into a full-scale robot vacuum prototype.">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://junebrink.com/projects/moto-guzzi/">
-    <meta name="twitter:card" content="summary_large_image">
-    <title>Moto Guzzi VC 6 — Oskar Junebrink</title>
-    <link rel="icon" href="../../assets/icons/favicon.png?v=2" type="image/png">
-    <link rel="stylesheet" href="../../styles/design-system.css?v=1">
-    <link rel="stylesheet" href="../../styles/site.css?v=10">
-    <link rel="stylesheet" href="../../styles/case-study.css?v=31">
-    <script src="../../scripts/site.js?v=2" defer></script>
-  </head>
-  <body class="case-page case-page--moto">
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header" data-header>
-      <a class="brand" href="../../index.html#top" aria-label="Oskar Junebrink, home"><span class="brand__mark" aria-hidden="true"></span><span>Junebrink</span></a>
-      <p class="header-note">Industrial design engineer</p>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" data-menu-toggle><span>Menu</span><span class="menu-toggle__icon" aria-hidden="true"></span></button>
-      <nav class="site-nav" id="site-navigation" aria-label="Main navigation"><a href="../../index.html#work">Work</a><a href="../../index.html#about">About</a><a href="../../index.html#contact">Contact</a></nav>
-    </header>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="Moto Guzzi’s motorcycle heritage translated into a domestic product. Working in a six-person team, I carried the selected form through 3D scanning, Alias development and physical prototyping.">
+  <title>Moto Guzzi Robot Vacuum · Oskar Junebrink</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23080808'/%3E%3Ccircle cx='28' cy='29' r='13' fill='none' stroke='white' stroke-width='7'/%3E%3Ccircle cx='48' cy='47' r='6' fill='%23c8ff65'/%3E%3C/svg%3E">
+  <link rel="preload" href="../../assets/fonts/inter-400.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="../../assets/fonts/inter-700.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="../../styles.css">
+  <script src="../../main.js" defer></script>
+</head>
+<body class="case-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="floating-header" aria-label="Site header">
+    <a class="wordmark" href="../../index.html#top" aria-label="Oskar Junebrink, home"><strong>oskar</strong>junebrink<span>.</span></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="../../index.html#work">My work</a>
+      <a href="../../index.html#about">About me</a>
+      <a class="button button--white" href="#contact">Contact me</a>
+    </nav>
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
+  </header>
+  <main class="page-surface" id="main">
+    <section class="case-hero" id="top" aria-labelledby="case-title">
+      <div class="page-width">
+        <div class="case-hero-top"><a class="case-back" href="../index.html" data-project-return><span aria-hidden="true">←</span><span data-project-return-label>View all projects</span></a><span class="case-index">Case study 02 / 08</span></div>
+        <ul class="project-tags" aria-label="Project disciplines"><li>CAD</li><li>Prototyping</li></ul>
+        <h1 id="case-title">Moto Guzzi Robot Vacuum</h1>
+        <p class="case-intro">Moto Guzzi’s motorcycle heritage translated into a domestic product. Working in a six-person team, I carried the selected form through 3D scanning, Alias development and physical prototyping.</p>
+        <figure class="case-cover project-image"><img src="../../assets/images/moto-guzzi.webp" alt="The finished green, silver and gold Moto Guzzi-inspired robot vacuum prototype" width="1600" height="1067" fetchpriority="high" decoding="async"></figure>
+      </div>
+    </section>
+    <div class="case-content page-width">
+      <dl class="case-facts" aria-label="Project overview"><div><dt>Role</dt><dd>3D scanning, CAD and prototyping</dd></div><div><dt>Team</dt><dd>6 designers</dd></div><div><dt>Duration</dt><dd>3 months · 2023</dd></div><div><dt>Tools</dt><dd>Alias and workshop manufacturing</dd></div></dl>
+      <section class="case-chapter" aria-labelledby="chapter-1">
+        <div class="case-chapter-heading"><span class="case-number">01</span><h2 id="chapter-1">The brief</h2></div>
+        <div class="case-chapter-copy"><p>Each team was assigned a motorcycle brand and tasked with designing a robot vacuum that could belong in its portfolio. Our team was assigned Moto Guzzi, and we studied how its forms, details and character could translate into an object for the home.</p><p>Brand research and concept exploration helped us choose which cues were worth carrying forward. Clay modeling gave the team a physical way to compare proportions before developing the selected direction.</p></div>
 
-    <main id="main">
-      <section class="case-hero moto-hero" aria-labelledby="case-title">
-        <div class="case-hero__top" data-reveal><p class="eyebrow">Advanced prototyping · LTU · 2023</p><a class="case-back" href="../../index.html#work">← Back to selected work</a></div>
-        <div class="case-hero__copy" data-reveal><h1 id="case-title">Moto Guzzi <em>VC 6.</em></h1><div class="case-hero__dek"><p>A robot vacuum cleaner shaped by the visual language of a century-old motorcycle brand.</p><p>From imageboard to clay, Alias, workshop and final appearance model.</p></div></div>
-        <figure class="case-hero__media" data-reveal data-parallax><img src="../../assets/images/moto-guzzi/cover.jpg" alt="Moto Guzzi-inspired VC 6 robot vacuum cleaner prototype on a wooden surface"></figure>
-        <div class="case-hero__footer"><span>Moto Guzzi VC 6 · workbook case study</span><a class="case-scroll" href="#process">Start the journey ↓</a></div>
       </section>
-
-      <section class="moto-intro" id="project" aria-labelledby="intro-title">
-        <div class="moto-intro__title"><p class="case-section-label">About the project</p><h2 id="intro-title">A new category with a very established <em>spirit.</em></h2></div>
-        <div class="moto-intro__body"><p>This project was part of the master course “Advanced Prototyping” at Luleå University of Technology. Our brief was to design and build an advanced prototype for a brand outside its usual category.</p><p>We chose Moto Guzzi and translated its racing history, exposed mechanics and restrained Italian styling into the VC 6: a compact robot vacuum that still feels robust, crafted and unmistakably Guzzi.</p><dl class="case-facts"><div><dt>Role</dt><dd>Industrial design, prototyping and visual development</dd></div><div><dt>Team</dt><dd>Six designers</dd></div><div><dt>Duration</dt><dd>Three months · spring 2023</dd></div><div><dt>Methods</dt><dd>Research, clay, 3D scanning, Alias, CNC, 3D printing, vacuum forming and laser cutting</dd></div></dl></div>
-      </section>
-
-      <nav class="moto-toc" aria-label="Case study chapters"><span>Chapters</span><a href="#process">01 Process</a><a href="#analysis">02 Analysis</a><a href="#ideation">03 Ideation</a><a href="#clay">04 Clay</a><a href="#modeling">05 3D</a><a href="#manufacturing">06 Manufacturing</a><a href="#product">07 Product</a></nav>
-
-      <section class="moto-chapter moto-chapter--dark" id="process" aria-labelledby="process-title">
-        <div class="moto-chapter__heading"><p class="case-section-label">01 / The process</p><h2 id="process-title">It is about the <em>journey.</em></h2><p>The project moved through a deliberate sequence: understand the brand, open up the form space, make it physical, then build the details that make the object feel real.</p></div>
-        <figure class="moto-page-board moto-page-board--feature" data-reveal><img src="../../assets/images/moto-guzzi/workbook/page-04.jpg" alt="Workbook page showing the complete Moto Guzzi design process from analysis to product"><figcaption>Workbook overview · from analysis to product</figcaption></figure>
-        <div class="moto-process-list" data-reveal><span>01</span><p>Analysis — identify the visual DNA.</p><span>02</span><p>Ideation — turn cues into directions.</p><span>03</span><p>Clay model — judge proportion in the real world.</p><span>04</span><p>3D model — scan, refine and communicate.</p><span>05</span><p>Manufacturing — translate surfaces into parts.</p><span>06</span><p>Product — make the new category feel believable.</p></div>
-      </section>
-
-      <section class="moto-chapter" id="analysis" aria-labelledby="analysis-title">
-        <div class="moto-chapter__heading"><p class="case-section-label">02 / Analysis</p><h2 id="analysis-title">Pure Italian <em>spirit.</em></h2><p>We looked at Moto Guzzi’s history, current models and future direction. Passion, workmanship, innovation and tradition became a set of design principles rather than decoration.</p></div>
-        <div class="moto-page-grid moto-page-grid--analysis" data-reveal>
-          <figure class="moto-page-board moto-page-board--wide"><img src="../../assets/images/moto-guzzi/workbook/page-05.jpg" alt="Workbook introduction to the Moto Guzzi analysis"><figcaption>Setting the brief</figcaption></figure>
-          <figure class="moto-page-board"><img src="../../assets/images/moto-guzzi/workbook/page-06.jpg" alt="Workbook page describing Moto Guzzi heritage and pure Italian spirit"><figcaption>Heritage and values</figcaption></figure>
-          <figure class="moto-page-board"><img src="../../assets/images/moto-guzzi/workbook/page-07.jpg" alt="Moto Guzzi analysis imageboard with passion, workmanship, innovation and tradition"><figcaption>Imageboard</figcaption></figure>
-          <figure class="moto-page-board moto-page-board--wide"><img src="../../assets/images/moto-guzzi/workbook/page-08.jpg" alt="Moto Guzzi moodboard titled A Dream on Two Wheels"><figcaption>A dream on two wheels</figcaption></figure>
-          <figure class="moto-page-board"><img src="../../assets/images/moto-guzzi/workbook/page-09.jpg" alt="Moto Guzzi motorcycle with callouts for rounded edges, V-engine, eagle and inflated surfaces"><figcaption>Recognisable cues</figcaption></figure>
-          <figure class="moto-page-board"><img src="../../assets/images/moto-guzzi/workbook/page-11.jpg" alt="Moto Guzzi lineboard showing curves and connected lines"><figcaption>Lineboard</figcaption></figure>
-          <figure class="moto-page-board moto-page-board--wide"><img src="../../assets/images/moto-guzzi/workbook/page-12.jpg" alt="Workbook page introducing design format analysis"><figcaption>Design format analysis</figcaption></figure>
-          <figure class="moto-page-board moto-page-board--wide"><img src="../../assets/images/moto-guzzi/workbook/page-13.jpg" alt="Comparison matrix of Moto Guzzi and other motorcycle design characteristics"><figcaption>What carries into the VC 6</figcaption></figure>
+      <section class="case-chapter" aria-labelledby="chapter-2">
+        <div class="case-chapter-heading"><span class="case-number">02</span><h2 id="chapter-2">My contribution</h2></div>
+        <div class="case-chapter-copy"><p>My responsibility covered 3D scanning, surface modeling in Autodesk Alias and the final physical prototype. I scanned the selected clay form and rebuilt it digitally so the team could refine and communicate a shared direction.</p><p>The digital model connected visualization and manufacturing. Working between the clay form, the scan and the Alias surfaces helped us keep the product’s proportions consistent as the design developed.</p></div>
+        <div class="case-gallery case-gallery--moto-contribution">
+          <div class="moto-contribution-column"><div class="case-gallery-stack">
+            <figure class="case-figure"><div class="case-figure-image"><img src="../../assets/images/projects/moto-guzzi/clay-modeling.webp" alt="Clay modeling during the Moto Guzzi robot vacuum project" width="1600" height="1067" loading="lazy" decoding="async"></div><figcaption>Developing the form in clay</figcaption></figure>
+            <figure class="case-figure case-figure--moto-workshop"><div class="case-figure-image"><img src="../../assets/images/projects/moto-guzzi/prototype-workshop.webp" alt="Building a display stand with a textured base and brick backdrop for the Moto Guzzi robot vacuum prototype" width="1600" height="1200" loading="lazy" decoding="async"></div><figcaption>Building the display stand for the prototype</figcaption></figure>
+          </div></div>
+          <figure class="case-figure"><div class="case-figure-image"><img src="../../assets/images/projects/moto-guzzi/cad-development.webp" alt="Digital CAD development of the Moto Guzzi robot vacuum" width="1067" height="1600" loading="lazy" decoding="async"></div><figcaption>Taking the form into CAD</figcaption></figure>
         </div>
       </section>
-
-      <section class="moto-chapter moto-chapter--dark" id="ideation" aria-labelledby="ideation-title">
-        <div class="moto-chapter__heading"><p class="case-section-label">03 / Ideation</p><h2 id="ideation-title">Many sketches. Three <em>directions.</em></h2><p>Three groups explored sporty, traditional and brand-wide interpretations. The strongest ideas became the starting points for the clay workshop.</p></div>
-        <div class="moto-page-grid moto-page-grid--two" data-reveal><figure class="moto-page-board moto-page-board--dark"><img src="../../assets/images/moto-guzzi/workbook/page-14.jpg" alt="Workbook page showing the ideation stage and concept exploration"><figcaption>Opening the form space</figcaption></figure><figure class="moto-page-board moto-page-board--dark"><img src="../../assets/images/moto-guzzi/workbook/page-15.jpg" alt="Workbook ideation boards with sketches, surfaces and vacuum cleaner form concepts"><figcaption>Narrowing the directions</figcaption></figure></div>
+      <section class="case-chapter" aria-labelledby="chapter-3">
+        <div class="case-chapter-heading"><span class="case-number">03</span><h2 id="chapter-3">Making the prototype</h2></div>
+        <div class="case-chapter-copy"><p>I translated the Alias model into CNC-milled foam, vacuum-formed covers, 3D-printed details and laser-cut graphics. These methods let us turn the digital surfaces into a full-scale appearance model.</p><p>I checked the fit of the formed covers on the body before painting and finishing the parts. Bringing the parts together made the design tangible and gave us a way to judge the whole object beyond the screen.</p></div>
+        <div class="case-gallery case-gallery--process">
+          <figure class="case-figure"><div class="case-figure-image"><img src="../../assets/images/projects/moto-guzzi/cnc-milling.webp" alt="CNC tool milling the robot vacuum’s foam body" width="1600" height="1067" loading="lazy" decoding="async"></div><figcaption>CNC milling</figcaption></figure>
+          <figure class="case-figure"><div class="case-figure-image"><img src="../../assets/images/projects/moto-guzzi/vacuum-forming.webp" alt="Clear plastic being vacuum formed over the milled foam shape" width="1600" height="1067" loading="lazy" decoding="async"></div><figcaption>Vacuum forming</figcaption></figure>
+          <figure class="case-figure"><div class="case-figure-image"><img src="../../assets/images/projects/moto-guzzi/cover-fitting.webp" alt="Transparent formed covers placed on the foam body to check their fit" width="1200" height="1600" loading="lazy" decoding="async"></div><figcaption>Checking the fit on the body</figcaption></figure>
+          <figure class="case-figure"><div class="case-figure-image"><img src="../../assets/images/projects/moto-guzzi/painting.webp" alt="Spray painting a masked panel for the Moto Guzzi prototype" width="1600" height="1067" loading="lazy" decoding="async"></div><figcaption>Painting and finishing</figcaption></figure>
+        </div>
       </section>
-
-      <section class="moto-chapter" id="clay" aria-labelledby="clay-title">
-        <div class="moto-chapter__heading"><p class="case-section-label">04 / Clay modeling</p><h2 id="clay-title">From sketch to <em>clay.</em></h2><p>Clay gave the team a way to test light, shadow, scale and touch before committing to a digital surface. It made the abstract brand cues measurable in three dimensions.</p></div>
-        <div class="moto-page-grid moto-page-grid--two" data-reveal><figure class="moto-page-board"><img src="../../assets/images/moto-guzzi/workbook/page-16.jpg" alt="Workbook page introducing the clay modelling phase"><figcaption>Making the ideas tangible</figcaption></figure><figure class="moto-page-board"><img src="../../assets/images/moto-guzzi/workbook/page-17.jpg" alt="Hands shaping a clay model during the Moto Guzzi project"><figcaption>Working the surface by hand</figcaption></figure><figure class="moto-page-board"><img src="../../assets/images/moto-guzzi/workbook/page-18.jpg" alt="Three concept descriptions and clay-inspired form studies"><figcaption>Comparing concept A, B and C</figcaption></figure><figure class="moto-page-board"><img src="../../assets/images/moto-guzzi/workbook/page-19.jpg" alt="Visual comparison of motorcycle references and vacuum cleaner concepts"><figcaption>Choosing the visual direction</figcaption></figure></div>
+      <section class="case-chapter" aria-labelledby="chapter-4">
+        <div class="case-chapter-heading"><span class="case-number">04</span><h2 id="chapter-4">The result</h2></div>
+        <div class="case-chapter-copy"><p>The final VC 6 appearance model brings Moto Guzzi cues into a compact domestic object through layered panels, curved surfaces, ventilation details and contrasting finishes.</p></div>
+        <div class="case-gallery case-gallery--moto-result">
+          <div class="case-gallery-stack">
+            <figure class="case-figure"><div class="case-figure-image"><img src="../../assets/images/projects/moto-guzzi/product-close-up.webp" alt="Close view of the finished Moto Guzzi robot vacuum prototype" width="1600" height="1067" loading="lazy" decoding="async"></div><figcaption>The final surfaces and details</figcaption></figure>
+            <figure class="case-figure"><div class="case-figure-image"><img src="../../assets/images/projects/moto-guzzi/product-on-rug.webp" alt="Finished Moto Guzzi robot vacuum with green, silver and gold panels on a striped green rug" width="1600" height="1067" loading="lazy" decoding="async"></div><figcaption>Green, silver and gold finishes</figcaption></figure>
+          </div>
+          <div class="moto-result-column"><figure class="case-figure"><div class="case-figure-image"><img src="../../assets/images/projects/moto-guzzi/product-in-context.webp" alt="Moto Guzzi robot vacuum prototype shown in context" width="1067" height="1600" loading="lazy" decoding="async"></div><figcaption>The completed appearance model</figcaption></figure></div>
+        </div>
       </section>
-
-      <section class="moto-chapter moto-chapter--dark" id="modeling" aria-labelledby="modeling-title">
-        <div class="moto-chapter__heading"><p class="case-section-label">05 / 3D scanning and 3D modeling</p><h2 id="modeling-title">A physical idea, made <em>editable.</em></h2><p>Once the concept was chosen, the clay model was scanned and rebuilt in Autodesk Alias. The digital model became the shared language for rendering, manufacturing and team decisions.</p></div>
-        <div class="moto-page-grid moto-page-grid--two" data-reveal><figure class="moto-page-board moto-page-board--dark"><img src="../../assets/images/moto-guzzi/workbook/page-20.jpg" alt="Workbook page explaining the 3D modelling stage"><figcaption>From scan to Alias</figcaption></figure><figure class="moto-page-board moto-page-board--dark"><img src="../../assets/images/moto-guzzi/workbook/page-21.jpg" alt="3D scanning and digital surface work on the vacuum cleaner form"><figcaption>Scanning, refining and communicating</figcaption></figure></div>
+      <section class="case-reflection" id="learning" aria-labelledby="learning-title">
+        <div class="case-reflection-main">
+          <div class="case-chapter-heading"><span class="case-number">05</span><h2 id="learning-title">What I learned</h2></div>
+          <div class="case-chapter-copy"><p>This project strengthened my ability to move between a physical form, a digital surface model and manufactured parts. I developed a better understanding of how production methods and small adjustments affect the final prototype. It also showed me how a shared digital model helps a team make decisions around the same design.</p></div>
+        </div>
+        <dl class="case-development">
+          <div>
+            <dt>Skills I developed</dt>
+            <dd>
+              <ul>
+                <li>Turning a scanned physical form into usable CAD surfaces.</li>
+                <li>Connecting digital modeling with manufacturing and finishing.</li>
+                <li>Developing a shared design direction within a team.</li>
+              </ul>
+            </dd>
+          </div>
+          <div>
+            <dt>Tools &amp; methods</dt>
+            <dd>
+              <ul>
+                <li>Autodesk Alias and 3D scanning.</li>
+                <li>Clay modeling, CNC milling and vacuum forming.</li>
+                <li>3D printing and laser cutting.</li>
+              </ul>
+            </dd>
+          </div>
+        </dl>
       </section>
-
-      <section class="moto-chapter" id="manufacturing" aria-labelledby="manufacturing-title">
-        <div class="moto-chapter__heading"><p class="case-section-label">06 / Manufacturing</p><h2 id="manufacturing-title">Turning surfaces into <em>parts.</em></h2><p>The prototype combined CNC-milled foam, vacuum-formed covers, 3D-printed details and laser-cut graphics. Each process was chosen for the character of the part it needed to make.</p></div>
-        <div class="moto-page-grid moto-page-grid--manufacturing" data-reveal><figure class="moto-page-board moto-page-board--feature"><img src="../../assets/images/moto-guzzi/workbook/page-22.jpg" alt="Workbook manufacturing introduction over a CAD model"><figcaption>Manufacturing begins with the model</figcaption></figure><figure class="moto-page-board"><img src="../../assets/images/moto-guzzi/workbook/page-24.jpg" alt="CNC milling and workshop production photographs"><figcaption>CNC milling and 3D printing</figcaption></figure><figure class="moto-page-board"><img src="../../assets/images/moto-guzzi/workbook/page-25.jpg" alt="Laser cutting close-up"><figcaption>Laser cutting</figcaption></figure><figure class="moto-page-board"><img src="../../assets/images/moto-guzzi/workbook/page-26.jpg" alt="Workshop manufacturing process photographs"><figcaption>Building the details</figcaption></figure><figure class="moto-page-board"><img src="../../assets/images/moto-guzzi/workbook/page-27.jpg" alt="Vacuum forming stages for the Moto Guzzi prototype"><figcaption>Vacuum forming the covers</figcaption></figure></div>
-      </section>
-
-      <section class="moto-chapter moto-chapter--dark" id="product" aria-labelledby="product-title">
-        <div class="moto-chapter__heading"><p class="case-section-label">07 / The product</p><h2 id="product-title">VC 6 — a new product with an old <em>soul.</em></h2><p>The final prototype carries the hexagon, tank-like curvature, exposed details and matte colour blocking of the V7 Stone line into a compact domestic object.</p></div>
-        <div class="moto-page-grid moto-page-grid--product" data-reveal><figure class="moto-page-board moto-page-board--dark moto-page-board--feature"><img src="../../assets/images/moto-guzzi/workbook/page-28.jpg" alt="VC 6 product title page"><figcaption>A new product language for Moto Guzzi</figcaption></figure><figure class="moto-page-board moto-page-board--dark moto-page-board--wide"><img src="../../assets/images/moto-guzzi/workbook/page-29.jpg" alt="Final design page showing the completed VC 6 robot vacuum"><figcaption>Final design</figcaption></figure><figure class="moto-page-board moto-page-board--dark"><img src="../../assets/images/moto-guzzi/workbook/page-30.jpg" alt="Front and rear views of the VC 6 prototype"><figcaption>Proportion and stance</figcaption></figure><figure class="moto-page-board moto-page-board--dark"><img src="../../assets/images/moto-guzzi/workbook/page-31.jpg" alt="VC 6 colour, material and brand detail studies"><figcaption>Colour and material</figcaption></figure><figure class="moto-page-board moto-page-board--dark moto-page-board--wide"><img src="../../assets/images/moto-guzzi/workbook/page-32.jpg" alt="VC 6 hole formation detail and motorcycle reference"><figcaption>Details derived from the brand</figcaption></figure><figure class="moto-page-board moto-page-board--wide"><img src="../../assets/images/moto-guzzi/workbook/page-33.jpg" alt="VC 6 inflated surfaces and final body details"><figcaption>Inflated surfaces</figcaption></figure><figure class="moto-page-board moto-page-board--wide"><img src="../../assets/images/moto-guzzi/workbook/page-34.jpg" alt="Close-up details of the finished VC 6 prototype"><figcaption>Details</figcaption></figure><figure class="moto-page-board moto-page-board--feature moto-page-board--dark"><img src="../../assets/images/moto-guzzi/workbook/page-35.jpg" alt="Final VC 6 robot vacuum prototype photographed on a green textile"><figcaption>The finished object</figcaption></figure></div>
-      </section>
-
-      <section class="moto-outro" aria-label="Project conclusion"><blockquote>Designing for a new category without losing what makes a brand <em>recognizable.</em></blockquote><p>The VC 6 is the result: a product that borrows Moto Guzzi’s attitude rather than simply copying its shapes.</p></section>
-      <nav class="case-next" aria-label="Project navigation"><div class="case-next__inner"><span>Back to selected work</span><a href="../../index.html#work"><strong>Explore more projects ↗</strong></a></div></nav>
-    </main>
-    <footer class="site-footer page-width"><span>© 2026 Oskar Junebrink</span><span>Made in Sweden · Built with curiosity</span><a href="#main">Back to top ↑</a></footer>
-  </body>
+      <nav class="case-navigation" aria-label="Project navigation">
+        <a class="text-link" href="../index.html">View all projects</a>
+        <a class="case-next" href="../hydrofic/index.html" aria-label="Next project: Hydrofic">
+          <div class="case-next-image"><img src="../../assets/images/projects/hydrofic/banner.webp" alt="Hydrofic portable ice bath in mountain lake brand imagery" width="1800" height="1013" loading="lazy" decoding="async"></div>
+          <div class="case-next-copy"><span>Next project</span><h2>Hydrofic</h2></div>
+          <span class="case-next-arrow" aria-hidden="true">↗</span>
+        </a>
+      </nav>
+    </div>
+  </main>
+  <footer class="contact" id="contact" aria-labelledby="contact-title">
+    <div class="contact-main">
+      <h2 id="contact-title">Need design support on<br class="desktop-break"> your team?</h2>
+      <p>From a new product to one that needs some attention, I am always happy to hear what<br class="wide-break"> you are working on.</p>
+      <div class="contact-options">
+        <div><span>Follow me on Instagram</span><a class="text-link" href="https://www.instagram.com/oskar.junebrink/" target="_blank" rel="noopener noreferrer">@oskar.junebrink</a></div>
+        <div><span>Prefer email?</span><a class="text-link" href="mailto:oskarjunebrink@gmail.com">oskarjunebrink@gmail.com</a></div>
+        <div><span>More about me</span><span class="cv-pending">CV coming soon</span></div>
+      </div>
+      <a class="button button--lime" href="https://www.linkedin.com/in/oskar-junebrink" target="_blank" rel="noopener noreferrer">Find me on LinkedIn</a>
+    </div>
+    <div class="footer-bar"><p>© 2026 Oskar Junebrink. All rights reserved.</p><p>Made with <span class="heart" aria-label="love">♥</span></p></div>
+  </footer>
+  <dialog class="mobile-menu" id="mobile-menu" aria-label="Main menu">
+    <div class="mobile-menu-inner">
+      <div class="mobile-menu-top"><a class="wordmark" href="../../index.html#top" data-close-menu aria-label="Oskar Junebrink, home"><strong>oskar</strong>junebrink<span>.</span></a><button class="round-close" type="button" aria-label="Close menu" data-close-menu><span></span><span></span></button></div>
+      <nav class="mobile-menu-nav" aria-label="Mobile navigation"><a href="../../index.html#work" data-close-menu>My work</a><a href="../../index.html#about" data-close-menu>About me</a><a class="button button--white" href="#contact" data-close-menu>Contact me</a></nav>
+      <div class="mobile-menu-links"><a href="mailto:oskarjunebrink@gmail.com">oskarjunebrink@gmail.com</a><span class="cv-pending">CV coming soon</span><a href="https://www.linkedin.com/in/oskar-junebrink" target="_blank" rel="noopener noreferrer">Find me on LinkedIn</a></div>
+    </div>
+  </dialog>
+</body>
 </html>
