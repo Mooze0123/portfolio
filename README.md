@@ -6,6 +6,8 @@ The homepage order is: header and introduction, four selected projects, a View m
 
 Selected-work photos retain their original landscape proportions and display without cropping, with subtle 12px corners. The image column is slightly wider on desktop, and project rows stack below 900px.
 
+On the All projects overview, all eight preview images fill matching 16:10 frames with a slight crop. The frames have no background strips or extra padding around the speaker preview.
+
 Each project image and “Read the case study” link opens a separate, shareable page with a project overview, process images, brief, contribution and result. A “What I learned” section closes each story with a project-specific reflection, skills developed, and tools and methods used. The top return link on each case study says “Back to selected work” and returns to the homepage’s work section when opened from the homepage; otherwise it says “View all projects” and opens the full overview. That choice survives refreshes and is scoped to the individual browser history entry. The bottom link always says “View all projects”; next-project links also remain available. The eight case-study pages are:
 
 - `projects/db-journey/index.html`
@@ -24,6 +26,8 @@ Db Wheelhouse is based on the supplied `Desktop/db portfolio` thesis and imagery
 DocBot presents a university team’s UI/UX and functional app prototype. Chess Pieces presents a group form study, with Oskar’s contribution in 3D modeling and visualization. Both use the current case-study layout and include learning, skills and tools sections. Their content and images come from the original portfolio.
 
 The mobile menu expands from the floating header pill and reveals its links in sequence. Closing reverses the panel reveal, including when navigating to a section or another page, or pressing Escape. Reduced-motion preferences disable the animation. Header links on case studies return to the homepage work and about sections; Contact me scrolls to the page’s contact footer.
+
+The page canvas and browser theme colour match the background at the top of each page, so scrolling past the top edge reveals the same light colour. Most pages use the hero’s light grey; the All projects overview and Hydrofic use white.
 
 ## Db animation
 
@@ -51,11 +55,11 @@ Run `npm run build` to produce a ready-to-host copy of the homepage, project ove
 - `main.js`: shared animated mobile menu.
 - `assets/images/`: optimized local copies of the existing portfolio’s project images and portrait.
 - `assets/images/projects/`: optimized process and brand images used in the case studies.
-- `assets/documents/`: the supplied Hydrofic product manual, served as a PDF.
+- `assets/documents/`: the supplied Hydrofic product manual and Oskar’s English CV, served as PDFs.
 - `assets/fonts/`: locally hosted Inter font files.
 
 The name, biography, contact details, project content and photography come from the existing portfolio in the adjacent `Portfolio/portfolio` folder. The original portfolio and design-reference folder remain untouched. The portfolio has no external image or font dependencies.
 
-No CV file was available, so its reference position displays “CV coming soon.” The footer’s “Follow me on Instagram” link opens @oskar.junebrink in a new tab. The header’s “Contact me” button scrolls to contact.
+“View my CV” links in every footer and mobile menu open the supplied English resume, `assets/documents/oskar-junebrink-cv.pdf`, in a new tab. The original PDF is preserved unchanged. The footer’s “Follow me on Instagram” link opens @oskar.junebrink in a new tab. The header’s “Contact me” button scrolls to contact.
 
 Capability icons adapt Lucide icons under the ISC license. Font and icon license notices are in `assets/licenses/`.
