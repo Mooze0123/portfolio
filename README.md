@@ -47,12 +47,21 @@ Run `npm run dev`, then open http://localhost:5173/. No dependencies need to be 
 
 Run `npm run build` to produce a ready-to-host copy of the homepage, project overview, eight case studies and assets in `dist/`. Run `npm run preview` to serve that copy.
 
+## Analytics
+
+All ten HTML pages load the shared `analytics.js` integration for Google Analytics 4 measurement ID `G-5GEMEMP9QG`. The Google tag loads only on `junebrink.com` and `www.junebrink.com`, after the visitor chooses “Allow analytics”. Localhost, file previews and other hosts do not send traffic to GA4. Google's standard `config` command records the page view; there is no additional manual page-view event.
+
+The cookie choice is remembered for six months. “Reject analytics” blocks the Google tag, and “Cookie settings” in every footer lets visitors change their choice. Withdrawing consent disables measurement, removes the GA cookies and reloads the page without Google's script. Advertising consent, Google Signals and ad personalization remain disabled. The recorded page address excludes query strings and fragments.
+
+Run `npm test` to check page coverage, consent behavior and preview exclusions. After deployment, allow analytics on the live site and open GA4 **Reports → Realtime** to confirm visits. Browser tracking protection or ad blockers can prevent analytics even after consent; normal reports may take 24–48 hours to populate.
+
 ## Content and assets
 
 - `index.html`: homepage content, project links, contact links and mobile menu.
 - `projects/`: editable static HTML case studies and project overview.
 - `styles.css`: typography, reference colors, homepage and case-study layouts, responsive behavior.
 - `main.js`: shared animated mobile menu.
+- `analytics.js`: shared GA4 and analytics cookie preferences.
 - `assets/images/`: optimized local copies of the existing portfolio’s project images and portrait.
 - `assets/images/projects/`: optimized process and brand images used in the case studies.
 - `assets/documents/`: the supplied Hydrofic product manual and Oskar’s English CV, served as PDFs.
